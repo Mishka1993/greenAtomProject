@@ -1138,7 +1138,7 @@
           </InOutArgument>
         </ui:InvokeCode.Arguments>
       </ui:InvokeCode>
-      <ui:SendOutlookMail Account="{x:Null}" Bcc="{x:Null}" MailMessage="{x:Null}" ReplyTo="{x:Null}" TimeoutMS="{x:Null}" Cc="kirzhner93@yahoo.com," DisplayName="Send Outlook Mail Message" sap:VirtualizedContainerService.HintSize="338,159" sap2010:WorkflowViewState.IdRef="SendOutlookMail_1" Importance="Normal" IsBodyHtml="False" IsDraft="False" Sensitivity="Normal" To="MikAlBelov@Greenatom.ru">
+      <ui:SendOutlookMail Account="{x:Null}" Bcc="{x:Null}" MailMessage="{x:Null}" ReplyTo="{x:Null}" TimeoutMS="{x:Null}" Cc="kirzhner93@yahoo.com" DisplayName="Send Outlook Mail Message" sap:VirtualizedContainerService.HintSize="338,159" sap2010:WorkflowViewState.IdRef="SendOutlookMail_1" Importance="Normal" IsBodyHtml="False" IsDraft="False" Sensitivity="Normal" To="MikAlBelov@Greenatom.ru">
         <ui:SendOutlookMail.Body>
           <InArgument x:TypeArguments="x:String">
             <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_43">bodyMail</CSharpValue>
