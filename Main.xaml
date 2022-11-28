@@ -1122,7 +1122,7 @@
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <ui:InvokeCode ContinueOnError="{x:Null}" Code="int value = int.Parse(string.Format(&quot;{0}&quot;, number));&#xA;str = &quot;В отчете &quot;+ value + &quot; строк. Ссылка на GitHub:&quot;;&#xA;    if (value % 10 == 1){&#xA;&#x9;&#x9;str = &quot;В отчете &quot;+ value + &quot; строка. Ссылка на GitHub:&quot;;&#xA;&#x9;}&#xA;&#x9;&#x9;&#xA;    if (value % 10 &gt;= 2 &amp;&amp; value % 10 &lt;= 4){&#xA;&#x9;&#x9;str = &quot;В отчете &quot;+ value + &quot; строки. Ссылка на GitHub:&quot;;&#xA;&#x9;}&#xA;&#x9;&#xA;&#x9;titleMailTmp = &quot;Отчет за &quot; + monthStringTmp + &quot; USD/JPY&quot;;" DisplayName="Invoke Code" sap:VirtualizedContainerService.HintSize="338,174" sap2010:WorkflowViewState.IdRef="InvokeCode_3" Language="CSharp">
+      <ui:InvokeCode ContinueOnError="{x:Null}" Code="int value = int.Parse(string.Format(&quot;{0}&quot;, number));&#xD;&#xA;str = &quot;В отчете &quot;+ value + &quot; строк. Ссылка на GitHub: https://github.com/Mishka1993/greenAtomProject&quot;;&#xD;&#xA;    if (value % 10 == 1){&#xD;&#xA;&#x9;&#x9;str = &quot;В отчете &quot;+ value + &quot; строка. Ссылка на GitHub: https://github.com/Mishka1993/greenAtomProject&quot;;&#xD;&#xA;&#x9;}&#xD;&#xA;&#x9;&#x9;&#xD;&#xA;    if (value % 10 &gt;= 2 &amp;&amp; value % 10 &lt;= 4){&#xD;&#xA;&#x9;&#x9;str = &quot;В отчете &quot;+ value + &quot; строки. Ссылка на GitHub: https://github.com/Mishka1993/greenAtomProject&quot;;&#xD;&#xA;&#x9;}&#xD;&#xA;&#x9;&#xD;&#xA;&#x9;titleMailTmp = &quot;Отчет за &quot; + monthStringTmp + &quot; USD/JPY&quot;;" DisplayName="Invoke Code" sap:VirtualizedContainerService.HintSize="338,174" sap2010:WorkflowViewState.IdRef="InvokeCode_3" Language="CSharp">
         <ui:InvokeCode.Arguments>
           <InOutArgument x:TypeArguments="x:Object" x:Key="number">
             <CSharpReference x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpReference`1_19">valueContCell</CSharpReference>
@@ -1138,7 +1138,7 @@
           </InOutArgument>
         </ui:InvokeCode.Arguments>
       </ui:InvokeCode>
-      <ui:SendOutlookMail Account="{x:Null}" Bcc="{x:Null}" Cc="{x:Null}" MailMessage="{x:Null}" ReplyTo="{x:Null}" TimeoutMS="{x:Null}" DisplayName="Send Outlook Mail Message" sap:VirtualizedContainerService.HintSize="338,159" sap2010:WorkflowViewState.IdRef="SendOutlookMail_1" Importance="Normal" IsBodyHtml="False" IsDraft="False" Sensitivity="Normal" To="kirzhner93@yahoo.com">
+      <ui:SendOutlookMail Account="{x:Null}" Bcc="{x:Null}" MailMessage="{x:Null}" ReplyTo="{x:Null}" TimeoutMS="{x:Null}" Cc="kirzhner93@yahoo.com," DisplayName="Send Outlook Mail Message" sap:VirtualizedContainerService.HintSize="338,159" sap2010:WorkflowViewState.IdRef="SendOutlookMail_1" Importance="Normal" IsBodyHtml="False" IsDraft="False" Sensitivity="Normal" To="MikAlBelov@Greenatom.ru">
         <ui:SendOutlookMail.Body>
           <InArgument x:TypeArguments="x:String">
             <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_43">bodyMail</CSharpValue>
